@@ -1,0 +1,91 @@
+#background {
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#top-row {
+  display: flex;
+  justify-content: space-between;  /* Place break and session side by side */
+  width: 100%;
+  max-width: 300px;  /* Constrain the max width of the top row */
+  margin-bottom: 20px;  /* Space between top row and next sections */
+}
+
+#break-stuffs, #session-stuffs {
+  display: flex;
+  flex-direction: column;  /* Stack labels and controls vertically */
+  align-items: center;
+}
+
+#break-label, #session-label {
+  margin-bottom: 5px;
+}
+
+#break-increment, #break-decrement, #session-increment, #session-decrement {
+  display: flex;
+  justify-content: center;  /* Align buttons horizontally */
+  margin: 2px;
+}
+
+#break-length, #session-length {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+#timer-div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#timer-label {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#time-left {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.controlBtns {
+  display: flex;
+  justify-content: center;  /* Align buttons horizontally */
+  gap: 20px;  /* Space between the buttons */
+  margin: 10px 0;
+}
+
+button {
+  background-color: #242424; /* Green color for buttons */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px; /* Space between buttons */
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #35445c; /* Darker green when hovered */
+}
+
+button i {
+  font-size: 1.5rem;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/fonts/fa-solid-900.woff2') format('woff2'),
+       url('/fonts/fa-solid-900.ttf') format('truetype');
+}
