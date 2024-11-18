@@ -11,16 +11,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-<<<<<<< HEAD
       external: [],
     },
   },
 });
-=======
-      external: [
-        '@fortawesome/fontawesome-free/css/all.min.css', // Explicitly externalize FontAwesome CSS
-      ],
-    },
-  },
-});
->>>>>>> 4c8602ac77d85c588ca67b8735d1eb8ef5219585
